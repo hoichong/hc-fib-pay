@@ -1,5 +1,8 @@
 from setuptools import find_packages, setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
 
     name="hc_fib_pay",
@@ -12,7 +15,7 @@ setup(
 
     description="Calculates a Fibonacci number",
 
-    long_description="A basic library that calculates Fibonacci numbers",
+    long_description=long_description,
 
     long_description_content_type="text/markdown",
 
