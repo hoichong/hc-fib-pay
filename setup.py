@@ -39,4 +39,8 @@ setup(
 
     tests_require=['pytest'],
 
+    entry_points={
+        'console_scripts': ['fib-number = hc_fib_pay.cmd.fib_numb:fib_numb',],
+    },    
+
 )
