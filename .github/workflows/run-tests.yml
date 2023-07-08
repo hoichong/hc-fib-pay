@@ -23,4 +23,4 @@ jobs:
 
       - name: run type checking
 
-        run: mypy flitton_fib_py
+        run: mypy hc_fib_pay
