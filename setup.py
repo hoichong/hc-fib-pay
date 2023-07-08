@@ -21,7 +21,10 @@ setup(
 
     url="https://github.com/hoichong/hc-fib-pay",
 
-    install_requires=[],
+    install_requires=[
+        "PyYAML>=4.1.2",
+        "dill>=0.2.8"
+    ],
 
     packages=find_packages(exclude=("tests",)),
 
@@ -41,6 +44,6 @@ setup(
 
     entry_points={
         'console_scripts': ['fib-number = hc_fib_pay.cmd.fib_numb:fib_numb',],
-    },    
+    },
 
 )
