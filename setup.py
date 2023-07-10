@@ -1,5 +1,10 @@
 from setuptools import find_packages, setup
 
+import pathlib
+
+with open(str(pathlib.Path(__file__).parent.absolute()) + "/hc_fib_pay/version.py", "r") as fh:
+    version = fh.read().split("=")[1].replace("'", "")
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -7,7 +12,7 @@ setup(
 
     name="hc_fib_pay",
 
-    version="0.0.1",
+    version=version,
 
     author="HC",
 
